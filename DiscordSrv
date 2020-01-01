@@ -1,0 +1,46 @@
+[19:42:07] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] Failed to load config: Error parsing config file config.yml: while parsing a flow mapping
+in 'string', line 11, column 11:
+Channels: {"chatmc": " 661969040507404317 }
+^
+expected ',' or '}', but got &lt;scalar&gt;
+in 'string', line 14, column 27:
+DiscordConsoleChannelId: "661982939919155213"
+^
+[19:42:07] [DiscordSRV - Initialization/WARN]: github.scarsz.configuralize.ParseException: Error parsing config file config.yml: while parsing a flow mapping
+in 'string', line 11, column 11:
+Channels: {"chatmc": " 661969040507404317 }
+^
+expected ',' or '}', but got &lt;scalar&gt;
+in 'string', line 14, column 27:
+DiscordConsoleChannelId: "661982939919155213"
+^
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.configuralize.Provider.load(Provider.java:35)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.configuralize.Provider.loadValues(Provider.java:56)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.configuralize.Provider.load(Provider.java:52)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.configuralize.DynamicConfig.loadAll(DynamicConfig.java:96)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.discordsrv.DiscordSRV.init(DiscordSRV.java:275)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at java.lang.Thread.run(Thread.java:748)
+[19:42:07] [DiscordSRV - Initialization/WARN]: Caused by: while parsing a flow mapping
+in 'string', line 11, column 11:
+Channels: {"chatmc": " 661969040507404317 }
+^
+expected ',' or '}', but got &lt;scalar&gt;
+in 'string', line 14, column 27:
+DiscordConsoleChannelId: "661982939919155213"
+^
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.parser.ParserImpl$ParseFlowMappingKey.produce(ParserImpl.java:732)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:139)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at org.yaml.snakeyaml.Yaml.loadAs(Yaml.java:501)
+[19:42:07] [DiscordSRV - Initialization/WARN]: at github.scarsz.configuralize.Provider.load(Provider.java:28)
+[19:42:07] [DiscordSRV - Initialization/WARN]: ... 5 more
